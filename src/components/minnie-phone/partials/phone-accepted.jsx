@@ -40,10 +40,10 @@ export default function PhoneAccepted() {
         allow="accelerometer; autoplay; encrypted-media; gyroscope;"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
-        className="scale-[2] absolute w-screen h-screen z-0 rotate-90"
+        className="scale-[2] absolute w-screen h-screen z-0 -rotate-90"
       ></iframe>
       <button
-        className="h-[10vh] w-[10vw] flex justify-center items-center bg-red-500 border-4 border-white p-12 text-white text-6xl rounded-full shakePhone absolute top-[50%] left-[15%]"
+        className="h-[10vh] w-[10vw] flex justify-center items-center bg-red-500 border-4 border-white p-12 text-white text-6xl rounded-full shakePhone absolute top-[50%] left-[80%]"
         onClick={handleTurnoff}
       >
         📞
@@ -53,7 +53,7 @@ export default function PhoneAccepted() {
         src=""
         id="cam"
         autoPlay
-        className="rotate-90 absolute w-[30vh] h-[30vh] z-0 -bottom-10 left-0 rounded-lg border-4 border-white shadow-lg object-cover"
+        className="-rotate-90 absolute w-[30vh] h-[30vh] z-0 top-0 right-0 rounded-lg border-4 border-white shadow-lg object-cover"
       ></video>
     </div>
   );
