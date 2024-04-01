@@ -22,13 +22,12 @@ export default function PhoneAccepted() {
   }, []);
 
   const handleTurnoff = () => {
-
     //   stop calling sound
     const audio = new Audio("/audio/bubbles/pop.mp3");
     audio.play();
 
     router.push("/games");
-  }
+  };
 
   return (
     <div>
@@ -41,16 +40,20 @@ export default function PhoneAccepted() {
         allow="accelerometer; autoplay; encrypted-media; gyroscope;"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
-        className="absolute w-screen h-screen z-0"
+        className="absolute w-screen h-screen z-0 -rotate-90"
       ></iframe>
-      <button className="bg-red-500 border-4 border-white p-12 text-white text-6xl rounded-full shakePhone absolute top-[70%] right-[45%]" onClick={handleTurnoff}>
+      <button
+        className="h-[10vh] w-[10vw] flex justify-center items-center bg-red-500 border-4 border-white p-12 text-white text-6xl rounded-full shakePhone absolute top-[30%] left-[70%]"
+        onClick={handleTurnoff}
+      >
         📞
       </button>
+
       <video
         src=""
         id="cam"
         autoPlay
-        className="absolute w-[30vh] h-[30vh] z-0 bottom-0 right-0 rounded-lg border-4 border-white shadow-lg object-cover"
+        className="absolute w-[30vh] h-[30vh] z-0 top-0 right-0 rounded-lg border-4 border-white shadow-lg object-cover"
       ></video>
     </div>
   );
