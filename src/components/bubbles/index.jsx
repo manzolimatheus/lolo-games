@@ -101,7 +101,7 @@ export default function BubblesGame() {
   }, []);
 
   return (
-    <div className="bg-[url('/img/bg/underwater.jpg')] bg-cover bg-no-repeat bg-center h-[100vh] w-[100vw] overflow-hidden grid grid-rows-[80%_20%]">
+    <div className="bg-[url('/img/bg/underwater.jpg')] bg-cover bg-no-repeat bg-center h-[100vh] w-[100vw] overflow-hidden grid grid-rows-[70%_auto]">
       <div className="flex" id="map" />
       {/* Menu */}
       <div className="flex justify-start p-4">

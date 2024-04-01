@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import MenuButton from "../menu-button";
 
 export default function PianoGame() {
   const animals = [
@@ -86,15 +87,7 @@ export default function PianoGame() {
     <div className="bg-[url('/img/bg/wood.jpg')] bg-cover bg-no-repeat bg-center grid grid-rows-[20%_40%_40%] h-screen overflow-hidden">
       {/* Menu */}
       <div className="flex justify-end p-4">
-        <Link href="/games" className="bg-white rounded-full shadow-lg">
-          <Image
-            src="/img/icons/joystick.gif"
-            alt="Games"
-            width={50}
-            height={50}
-            className="h-full w-auto cursor-pointer"
-          />
-        </Link>
+        <MenuButton />
       </div>
       {/* Animals */}
       <div className="flex justify-between p-8">
@@ -109,7 +102,7 @@ export default function PianoGame() {
               toggleJumpClass(event);
               playSound(animal.audio);
             }}
-            className="object-contain cursor-pointer h-full drop-shadow-lg"
+            className="h-[140px] w-full object-contain cursor-pointer drop-shadow-lg"
           />
         ))}
       </div>
