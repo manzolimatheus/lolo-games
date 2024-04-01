@@ -31,6 +31,7 @@
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
   "start_url": "/?fullscreen=true",
-  "display": "fullscreen",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
   "orientation": "landscape"
 }
