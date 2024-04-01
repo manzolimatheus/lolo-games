@@ -53,7 +53,7 @@ export default function PhoneGame() {
             src=""
             id="cam"
             autoPlay
-            className="-rotate-90 absolute w-screen h-screen scale-[2] z-0"
+            className="-rotate-180 absolute w-screen h-screen scale-[2] z-0"
           ></video>
           <div className="flex gap-2 p-8 justify-center items-center w-screen h-screen absolute z-1">
             <Image

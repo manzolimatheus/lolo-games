@@ -53,7 +53,7 @@ export default function PhoneAccepted() {
         src=""
         id="cam"
         autoPlay
-        className="-rotate-90 absolute w-[30vh] h-[30vh] z-0 top-0 right-0 rounded-lg border-4 border-white shadow-lg object-cover"
+        className="-rotate-180 absolute w-[30vh] h-[30vh] z-0 top-0 right-0 rounded-lg border-4 border-white shadow-lg object-cover"
       ></video>
     </div>
   );
