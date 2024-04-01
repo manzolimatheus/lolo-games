@@ -44,7 +44,7 @@ export default function PhoneGame() {
   }, []);
 
   return (
-    <div className="h-screen bg-slate-800">
+    <div className="h-screen w-screen overflow-hidden">
       {accepted ? (
         <PhoneAccepted />
       ) : (
@@ -53,7 +53,7 @@ export default function PhoneGame() {
             src=""
             id="cam"
             autoPlay
-            className="-rotate-180 absolute w-screen h-screen scale-[2] z-0"
+            className="-rotate-180 w-screen h-screen z-0 scale-[2] fixed"
           ></video>
           <div className="flex gap-2 p-8 justify-center items-center w-screen h-screen absolute z-1">
             <Image
@@ -63,7 +63,7 @@ export default function PhoneGame() {
               height={200}
               className="-rotate-90 bg-pink-100 shadow-lg w-[200px] h-[200px] object-contain rounded-full border-4 border-pink-600 cursor-pointer"
             />
-            <h3 className="-rotate-90 text-white text-center text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            <h3 className="-rotate-90 text-white text-center text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
               <strong className="text-red-400">Mickey Mouse</strong> está
               ligando...
             </h3>

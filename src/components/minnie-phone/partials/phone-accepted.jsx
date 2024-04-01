@@ -43,7 +43,7 @@ export default function PhoneAccepted() {
         className="scale-[2] absolute w-screen h-screen z-0 -rotate-90"
       ></iframe>
       <button
-        className="h-[10vh] w-[10vw] flex justify-center items-center bg-red-500 border-4 border-white p-12 text-white text-6xl rounded-full shakePhone absolute top-[50%] left-[80%]"
+        className="h-[10vh] w-[10vw] flex justify-center items-center bg-red-500 border-4 border-white p-12 text-white text-6xl rounded-full shakePhone absolute top-[40%] left-[80%]"
         onClick={handleTurnoff}
       >
         📞
