@@ -1,5 +1,6 @@
-import PhoneGame from "@/components/minnie-phone";
+import ContactList from "@/components/contact-list";
+import PhoneGame from "@/components/phone-char";
 
 export default function Phone() {
-    return <PhoneGame />
+  return <ContactList />;
 }

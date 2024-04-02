@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  touch-action: manipulation;
+}
+
 .jump {
   animation: jump 1s infinite;
 }
